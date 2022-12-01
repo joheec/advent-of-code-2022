@@ -18,7 +18,7 @@ function getMaxCalories(numOfElves) {
         return tracker;
     }, Array(numOfElves).fill(0))
 
-    return maxCalories.reduce((total, cal) => Number(total) + Number(cal), 0);
+    return maxCalories.reduce((total, cal) => total + cal, 0);
 }
 
 console.log('Max Calories of 1 elf', getMaxCalories(1));
